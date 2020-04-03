@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Template inheritance
+{% endblock %}
+
+{% block body %}
+<h3>{{ testText }}</h3>
+
+<h3>Print array:</h3>
+<ul>
+    {% for element in testArray %}
+        <li>{{ element }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
