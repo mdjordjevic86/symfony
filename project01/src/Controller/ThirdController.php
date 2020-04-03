@@ -19,7 +19,7 @@
 
 		/**
 		 * Test passing vars to twig template engine
-		 * @Route()
+		 * @Route("/third")
 		 */
 		public function show() {
 			$debugText = "This is some text to test passing vars to twig template engine";
