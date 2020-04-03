@@ -4,6 +4,9 @@
 	 *
 	 * @package App\Controller
 	 *
+	 * @project project01
+	 * @author  Miki <63016469+mdjordjevic86@users.noreply.github.com>
+	 *
 	 * @date    : 4/3/20
 	 * @time    : 6:21 PM
 	 */
@@ -24,9 +27,30 @@
 			$debugText = "This is some text to test passing vars to twig template engine";
 
 			return $this->render(
-				'third/show.html.twig',
+				'twig/show.html.twig',
 				[
 					'testText' => $debugText
+				]
+			);
+		}
+
+		/**
+		 * Prints array inside the template
+		 * @Route("/twig/printr")
+		 */
+		public function printArray() {
+			$testArray = [
+				'test 1',
+				'test 2',
+				'test 3',
+				'test 4',
+				'test 5',
+			];
+
+			return $this->render(
+				'twig/printArray.html.twig',
+				[
+					'testArray' => $testArray
 				]
 			);
 		}
