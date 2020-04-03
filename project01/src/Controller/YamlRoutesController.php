@@ -1,9 +1,8 @@
 <?php
 	/**
-	 * Class FirstController
+	 * Class YamlRoutesController
 	 *
 	 * @package App\Controller
-	 * @author  Milan Djordjevic <mdjordjevic@jaggaer.com>
 	 *
 	 * @date    : 4/2/20
 	 * @time    : 8:17 PM
@@ -13,7 +12,7 @@
 
 	use Symfony\Component\HttpFoundation\Response;
 
-	class FirstController {
+	class YamlRoutesController {
 
 		/**
 		 * First controller

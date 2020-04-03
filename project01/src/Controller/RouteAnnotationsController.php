@@ -1,9 +1,8 @@
 <?php
 	/**
-	 * Class SecondController
+	 * Class RouteAnnotationsController
 	 *
 	 * @package App\Controller
-	 * @author  Milan Djordjevic <mdjordjevic@jaggaer.com>
 	 *
 	 * @date    : 4/2/20
 	 * @time    : 9:26 PM
@@ -14,10 +13,10 @@
 	use Symfony\Component\HttpFoundation\Response;
 	use Symfony\Component\Routing\Annotation\Route;
 
-	class SecondController {
+	class RouteAnnotationsController {
 
 		/**
-		 * @Route("/second")
+		 * @Route("/routeannotations")
 		 * @return Response
 		 */
 		public function show() {
@@ -25,7 +24,7 @@
 		}
 
 		/**
-		 * @Route("/second/{param}")
+		 * @Route("/routeannotations/{param}")
 		 * @param $param
 		 * @return Response
 		 */
