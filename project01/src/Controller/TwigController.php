@@ -77,4 +77,27 @@
 				]
 			);
 		}
+
+		/**
+		 * @Route("/twig/q")
+		 */
+		public function question() {
+			$debugText = "This is some text to test passing vars to twig template engine";
+
+			$testArray = [
+				'test 1',
+				'test 2',
+				'test 3',
+				'test 4',
+				'test 5',
+			];
+
+			return $this->render(
+				'twig/question.html.twig',
+				[
+					'testText' => $debugText,
+					'testArray' => $testArray
+				]
+			);
+		}
 	}

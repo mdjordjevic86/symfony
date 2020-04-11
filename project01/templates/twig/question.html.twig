@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Template inheritance
+{% endblock %}
+
+{% block body %}
+<h3>{{ testText }}</h3>
+
+<h3>Print array:</h3>
+<ul class="col-1">
+    {% for element in testArray %}
+        <li class="rounded flex-md-column">{{ element }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
