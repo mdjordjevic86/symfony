@@ -14,7 +14,7 @@ class Article
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private $article_id;
 
 	/**
 	 * @ORM\Column(type="integer", nullable=true)
@@ -43,7 +43,7 @@ class Article
 
     public function getId(): ?int
     {
-        return $this->id;
+        return $this->article_id;
     }
 
 	public function getCatalogId(): ?int
