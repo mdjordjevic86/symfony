@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Class Admin
+	 * Class AdminController
 	 *
 	 * @package Controller
 	 * @author  Miki <63016469+mdjordjevic86@users.noreply.github.com>
@@ -18,7 +18,7 @@
 	use Symfony\Component\HttpFoundation\Response;
 	use Symfony\Component\Routing\Annotation\Route;
 
-	class Admin extends AbstractController {
+	class AdminController extends AbstractController {
 
 		/**
 		 * @Route("/admin/article/new")
